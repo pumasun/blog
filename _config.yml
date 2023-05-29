@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 静石随笔
+subtitle: '记录工作、学习与生活的点滴'
+description: '工作学习过程中的各种笔记、记录、总结，以及生活中偶尔的感慨或者纯粹的记录。很高兴你发现了这里，enjoy!'
+keywords: 'IT 随笔 博客 静石 登珂'
+author: 'Dickens Hu'
+language: 'zh-CN'
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://silentstone.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,9 +97,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: 'git@github.com:pumasun/pumasun.github.io.git'
+  branch: master
