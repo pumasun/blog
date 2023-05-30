@@ -1,8 +1,8 @@
 ---
 title: Kotlin基本语法
 date: 2023-02-9 07:57:03
-tags: ['IT','Kotlin','Programing Language', 'Android']
-category: IT笔记
+tags: ['IT','Kotlin','Programming Language', 'Android']
+category: ['IT', 'Android']
 ---
 
 ## [官方文档](https://kotlinlang.org/docs/basic-syntax.html)

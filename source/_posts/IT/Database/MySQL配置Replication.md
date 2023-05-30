@@ -5,7 +5,7 @@ tags: ['IT', 'MySQL', 'Database', 'Replication', 'Manual']
 description: '在实际生产环境中，为了保障数据的高可用，我们经常需要对数据进行多副本部署。如果你在使用MySQL，那么Replication将帮你实现这个需求。'
 keywords: ['生产', 'MySQL', '副本', '高可用', 'Replication', 'MySQL', 'Database', 'DB']
 top_img: img/MySQL配置Replication.png
-category: IT笔记
+category: ['IT', 'MySQL']
 ---
 # MySQL配置Replication
 ## 官网

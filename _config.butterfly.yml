@@ -12,10 +12,7 @@ menu:
   主页: / #|| fas fa-home
   # Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
-  IT笔记: /categories/IT笔记
-  读书笔记: /categories/读书笔记
-  随笔: /categories/随笔 #|| fas fa-folder-open
-  工作笔记: /categories/工作笔记
+  随笔系列: /categories
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
