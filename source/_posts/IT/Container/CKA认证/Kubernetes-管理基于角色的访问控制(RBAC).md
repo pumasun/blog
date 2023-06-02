@@ -1,5 +1,5 @@
 ---
-title: 管理基于角色的访问控制
+title: Kubernetes-管理基于角色的访问控制
 date: 2023-06-02 11:27:29
 tags: ['IT', 'Kubernetes', 'K8S','CKA认证']
 description: '关于CKA认证'
