@@ -122,7 +122,7 @@ category: ['IT']
       </code></td>
     </tr>
     <tr>
-      <td>Strikethrough</td>
+      <td>删除线</td>
       <td><code>~~The world is flat.~~</code></td>
     </tr>
     <tr>
@@ -146,7 +146,7 @@ category: ['IT']
       </code></td>
     </tr>
     <tr>
-      <td>Subscript</td>
+      <td>下标</td>
       <td><code>
         H~2~O
       </code></td>
