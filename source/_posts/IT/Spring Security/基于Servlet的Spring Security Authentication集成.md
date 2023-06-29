@@ -1,7 +1,8 @@
 ---
-title: 基于Servlet的Spring Security集成
+title: 基于Servlet的Spring Security Authentication集成
 tags:
 ---
+[原文](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/index.html)
 
 # 什么情况下使用Spring Security
 1. 构建REST API
@@ -381,60 +382,4 @@ LDAP(轻量级目录访问协议)经常被组织用作用户信息的中央存�
 Spring Security在配置为接受用户名/密码进行身份验证时使用基于LDAP的身份验证。然而，尽管使用用户名和密码进行身份验证，但它不使用UserDetailsService，因为在绑定身份验证中，LDAP服务器不返回密码，因此应用程序无法执行密码验证。
 
 对于如何配置LDAP服务器，有许多不同的场景，因此Spring Security的LDAP提供程序是完全可配置的。它使用单独的策略接口进行身份验证和角色检索，并提供默认实现，可以对其进行配置以处理各种情况。
-
-### 先决条件
-在尝试将LDAP与Spring Security一起使用之前，您应该熟悉它。下面的链接很好地介绍了所涉及的概念，并提供了使用免费LDAP服务器OpenLDAP: www.zytrax.com/books/ldap/设置目录的指南。熟悉用于从Java访问LDAP的JNDI API也很有用。我们没有在LDAP提供程序中使用任何第三方LDAP库(Mozilla、JLDAP或其他)，但是Spring LDAP得到了广泛的使用，因此如果您计划添加自己的定制，那么熟悉该项目可能会很有用。
-
-> 在使用LDAP身份验证时，您应该确保正确地配置了LDAP连接池。
-
-### 设置嵌入式LDAP服务器
-您需要做的第一件事是确保您有一个LDAP服务器来指向您的配置。为了简单起见，通常最好从嵌入式LDAP服务器开始。Spring Security支持使用:
-- 嵌入式UnboundID服务器
-- 嵌入式ApacheDS服务器
-
-在下面的示例中，我们公开用户。ldif作为类路径资源，用两个用户user和admin初始化嵌入式LDAP服务器，这两个用户的密码都是password:
-users.ldif
-``` LDIF
-dn: ou=groups,dc=springframework,dc=org
-objectclass: top
-objectclass: organizationalUnit
-ou: groups
-
-dn: ou=people,dc=springframework,dc=org
-objectclass: top
-objectclass: organizationalUnit
-ou: people
-
-dn: uid=admin,ou=people,dc=springframework,dc=org
-objectclass: top
-objectclass: person
-objectclass: organizationalPerson
-objectclass: inetOrgPerson
-cn: Rod Johnson
-sn: Johnson
-uid: admin
-userPassword: password
-
-dn: uid=user,ou=people,dc=springframework,dc=org
-objectclass: top
-objectclass: person
-objectclass: organizationalPerson
-objectclass: inetOrgPerson
-cn: Dianne Emu
-sn: Emu
-uid: user
-userPassword: password
-
-dn: cn=user,ou=groups,dc=springframework,dc=org
-objectclass: top
-objectclass: groupOfNames
-cn: user
-uniqueMember: uid=admin,ou=people,dc=springframework,dc=org
-uniqueMember: uid=user,ou=people,dc=springframework,dc=org
-
-dn: cn=admin,ou=groups,dc=springframework,dc=org
-objectclass: top
-objectclass: groupOfNames
-cn: admin
-uniqueMember: uid=admin,ou=people,dc=springframework,dc=org
-```
+具体请参考[LDAP Authentication](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/ldap.html)
