@@ -6,7 +6,6 @@ description: '关于CKA认证'
 keywords: ['Kubernetes', 'CKA']
 category: ['IT', 'Container', 'CKA认证']
 ---
-
 # 关于CKA认证
 
 [官网说明](https://training.linuxfoundation.cn/certificates/1)
@@ -41,7 +40,7 @@ CKA认证针对考核成为当业界的Kubernetes管理员所需的技能。
 
 ### 详细内容：
 #### 集群架构，安装和配置：25%
-- [管理基于角色的访问控制（RBAC）](/2023/06/02/IT/Container/CKA认证/管理基于角色的访问控制(RBAC)/)
+- [管理基于角色的访问控制（RBAC）](../Kubernetes-%E7%AE%A1%E7%90%86%E5%9F%BA%E4%BA%8E%E8%A7%92%E8%89%B2%E7%9A%84%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6(RBAC)/)
 - 使用Kubeadm安装基本集群
 - 管理高可用性的Kubernetes集群
 - 设置基础架构以部署Kubernetes集群

@@ -207,9 +207,9 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2020
-  custom_text:
-  copyright: true # Copyright of theme and framework
+    since: 2015
+  custom_text: <a href="https://beian.miit.gov.cn">鲁ICP备15029721号-1</a>
+  copyright: false # Copyright of theme and framework
 
 # aside (側邊欄)
 # --------------------------------------
@@ -391,13 +391,13 @@ addThis:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,qq #,facebook,twitter,weibo,qq
 
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: false
-  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
+  enable: true
+  item: wechat,copy_link #,facebook,twitter,sina_weibo,facebook_messenger,email,copy_link
 
 # Comments System
 # --------------------------------------

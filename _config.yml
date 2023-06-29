@@ -6,7 +6,7 @@
 title: 静石随笔
 subtitle: '记录工作、学习与生活的点滴'
 description: '工作学习过程中的各种笔记、记录、总结，以及生活中偶尔的感慨或者纯粹的记录。很高兴你发现了这里，enjoy!'
-keywords: 'IT 随笔 博客 静石 登珂'
+keywords: 'IT 随笔 博客 静石'
 author: 'Dickens Hu'
 language: 'zh-CN'
 timezone: 'Asia/Shanghai'
@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://silentstone.cn
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -28,7 +28,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: "baidu_verify_codeva-xWtOedelZK.html"
 
 # Writing
 new_post_name: :title.md # File name of new posts
