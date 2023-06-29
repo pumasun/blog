@@ -1,5 +1,6 @@
 ---
 title: 基于Servlet的Spring Security Authentication集成
+date: 2023-06-26 16:29:25
 tags:
 ---
 [原文](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/index.html)
