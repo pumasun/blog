@@ -800,7 +800,7 @@ public class MyController {
 Spring Security将为每个方法调用调用该bean上的给定方法。
 这样做的好处是，所有授权逻辑都在一个单独的类中，可以独立地对其进行单元测试和正确性验证。它还可以使用完整Java语言特性。
 
-# 方法二: 使用自定义授权管理器(Authorization Manager)
+### 方法二: 使用自定义授权管理器(Authorization Manager)
 首先，声明一个授权管理器实例，比如:
 ``` Java
 @Component
